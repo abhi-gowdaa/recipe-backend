@@ -1,0 +1,15 @@
+
+----------eni variable----------
+OPENSEARCH_INITIAL_ADMIN_PASSWORD
+
+
+----------------------------------------------------------------------------------------------------
+
+----------for mapping------------:
+
+ curl.exe -H "Content-Type: application/x-ndjson" -X PUT "https://localhost:9200/recipe" -ku admin:admin --data-binary "@map.json"
+
+-----------for uploading data-----------:
+
+curl.exe -H "Content-Type: application/x-ndjson" -X PUT "https://localhost:9200/recipe/_bulk" -ku admin:admin --data-binary "@bulk_recipe.json"
+
